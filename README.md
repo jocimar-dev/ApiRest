@@ -26,34 +26,34 @@ Este projeto é uma aplicação Spring Boot que utiliza Kotlin, Spring Data JPA,
 
 Para adicionar as dependências do projeto, insira as seguintes linhas no seu arquivo `build.gradle`:
 
-\`\`\`groovy
+`groovy
 dependencies {
 implementation 'org.springframework.boot:spring-boot-starter-web'
 implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 implementation 'com.h2database:h2'
-}
-\`\`\`
+}`
+
 
 ### Configuração do Banco H2
 
 Insira as seguintes linhas no seu arquivo `application.properties`:
 
-\`\`\`properties
+`properties
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.username=sa
 spring.datasource.password=password
 spring.h2.console.enabled=true
-\`\`\`
+`
 
 ## Execução
 
 Para executar o projeto, navegue até a raiz do diretório e execute o seguinte comando:
 
-\`\`\`bash
-./gradlew bootRun
-\`\`\`
+
+`./gradlew bootRun`
+
 
 ## Como Usar
 
@@ -61,9 +61,9 @@ Após a execução, a API estará disponível em `http://localhost:8080`.
 
 - Para buscar e armazenar um endereço com base em um CEP, utilize:
 
-  \`\`\`http
-  GET /endereco/{cep}
-  \`\`\`
+
+`  GET /endereco/{cep}`
+
 
 ## Estrutura do Código
 
@@ -77,9 +77,9 @@ Após a execução, a API estará disponível em `http://localhost:8080`.
 
 Para executar os testes, utilize o comando:
 
-\`\`\`bash
-./gradlew test
-\`\`\`
+
+`./gradlew test`
+
 
 ## Contribuições
 
